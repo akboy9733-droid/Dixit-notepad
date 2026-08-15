@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Digital Books</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+     <div class="navbar">
+          <h1>Digital Library</h1>
+          
+ </div>
+ <div class="dark"><h3 style="display: inline-block;">Dark Mode</h3>  <input type="checkbox"></div>
+          
+ 
+ <div class="container">
+          <div class="book-container">
+               <h1>Discipline Matter</h1>
+               <h3>Dixit ;</h3>
+               <p>Build strong character before chasing success. Stay disciplined even when no one is watching, keep
+                    your word, and treat others with respect. Take care of your physical and mental health, continue
+                    learning throughout your life, and don't let your ego stop you from admitting mistakes or asking for
+                    help. Work hard, save money wisely, and be patient because meaningful success takes time. Choose
+                    your friends and partner carefully, as they greatly influence your future. Face challenges with
+                    courage instead of avoiding them, and remember that true strength is shown through kindness,
+                responsibility, integrity, and consistency—not by proving yourself to others.</p>
+ 
+  
+              <button onclick="deletebook(event)">Delete</button>
+          </div>
+     </div>
+
+ 
+     <div class="popup-overlay"></div>
+     <div class="popup-box">
+          <h2>Add Book :</h2>
+
+          <form>
+               <input type="text" placeholder="Book Title" id="book-title-input">
+               <input type="text" placeholder="Book Author" id="book-author-input">
+               <textarea placeholder="Short Description" id="book-description-input"></textarea>
+               <button id="add-book"><h3>Add</h3></button>         
+               <button id="cancel-pop"><h3>Cancel</h3></button>
+          </form>
+     </div>
+
+     <button class="add" id="popup-button">+</button>
+     <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+  
